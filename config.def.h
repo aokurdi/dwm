@@ -50,6 +50,7 @@ static const Rule rules[] = {
 	/* class                       instance    title      tags mask      switchtotag    isfloating   monitor */
 	{ "Gimp",                      NULL,       NULL,      1 << 4,        1,             1,           -1 },
 	{ "neovide",                   NULL,       NULL,      1 << 2,        1,             0,           -1 },
+	{ "Thunar",                    NULL,       NULL,      1 << 7,        1,             1,           -1 },
 	{ "Xfce4-terminal",            NULL,       NULL,      0,             0,             1,           -1 },
 	{ "firefox",                   NULL,       NULL,      1 << 1,        1,             0,           -1 },
 	{ "Arcolinux-welcome-app.py",  NULL,       NULL,      0,             0,             1,           -1 },
@@ -88,10 +89,11 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]     = { "dmenu_run", "-b", "-m", dmenumon, "-fn", dmenufont, "-nb", col_white, "-nf", col_gold, "-sb", col_gold, "-sf", col_gray4, NULL };
 static const char *filecmd[]      = { "thunar", NULL };
 static const char *webcmd[]       = { "firefox", NULL };
+static const char *editcmd[]      = { "neovide", "--multiGrid", NULL };
 static const char *calendar[]     = { "gsimplecal", NULL };
 static const char *taskmanager[]  = { "xfce4-taskmanager", NULL };
-static const char *incvol[]     = { "pactl", "set-sink-volume", "0", "+5%", NULL };
-static const char *decvol[]     = { "pactl", "set-sink-volume", "0", "-5%", NULL };
+static const char *incvol[]       = { "pactl", "set-sink-volume", "0", "+5%", NULL };
+static const char *decvol[]       = { "pactl", "set-sink-volume", "0", "-5%", NULL };
 
 #include "selfrestart.c"
 #include "shiftview.c"
@@ -102,8 +104,9 @@ static Key keys[] = {
 	{ Mod1Mask,                     XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_slash,  spawn,          {.v = webcmd } },
-	{ ControlMask,                  XK_1,   spawn,          {.v = decvol } },
-	{ ControlMask,                  XK_2,  spawn,          {.v = incvol } },
+	{ MODKEY,                       XK_n,      spawn,          {.v = editcmd } },
+	{ ControlMask,                  XK_1,      spawn,          {.v = decvol } },
+	{ ControlMask,                  XK_2,      spawn,          {.v = incvol } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
