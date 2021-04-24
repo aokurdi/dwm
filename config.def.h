@@ -11,8 +11,8 @@ static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "VictorMono Nerd Font:size=11" };
-static const char dmenufont[]       = "VictorMono Nerd Font Mono:size=11";
+static const char *fonts[]          = { "VictorMono Nerd Font:size=13" };
+static const char dmenufont[]       = "VictorMono Nerd Font Mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -89,7 +89,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]     = { "dmenu_run", "-b", "-m", dmenumon, "-fn", dmenufont, "-nb", col_white, "-nf", col_gold, "-sb", col_gold, "-sf", col_gray4, NULL };
 static const char *filecmd[]      = { "thunar", NULL };
 static const char *webcmd[]       = { "firefox", NULL };
-static const char *editcmd[]      = { "neovide", "--multiGrid", NULL };
+static const char *editcmd[]      = { "neovide",  NULL };
+static const char *gmruncmd[]     = { "gmrun",  NULL };
 static const char *calendar[]     = { "gsimplecal", NULL };
 static const char *taskmanager[]  = { "xfce4-taskmanager", NULL };
 static const char *incvol[]       = { "pactl", "set-sink-volume", "0", "+5%", NULL };
@@ -105,6 +106,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_slash,  spawn,          {.v = webcmd } },
 	{ MODKEY,                       XK_n,      spawn,          {.v = editcmd } },
+	{ MODKEY,                       XK_a,      spawn,          {.v = gmruncmd } },
 	{ ControlMask,                  XK_1,      spawn,          {.v = decvol } },
 	{ ControlMask,                  XK_2,      spawn,          {.v = incvol } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
