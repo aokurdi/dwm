@@ -36,8 +36,7 @@ static const unsigned int alphas[][3]      = {
 
 /* tagging */
 /* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
-/* static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" }; */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 /* static const char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" }; */
 
 
@@ -55,6 +54,7 @@ static const Rule rules[] = {
 	{ "firefox",                   NULL,       NULL,      1 << 1,        1,             0,           -1 },
 	{ "Arcolinux-welcome-app.py",  NULL,       NULL,      0,             0,             1,           -1 },
 	{ "Arcolinux-calamares-tool.py",  NULL,    NULL,      0,             0,             1,           -1 },
+	{ "Arcolinux-logout",             NULL,    NULL,      0,             0,             1,           -1 },
 };
 
 /* layout(s) */
