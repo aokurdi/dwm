@@ -8,7 +8,7 @@ my own padding and height functionality.
 TODO:
 * Enable systray togglling.  
   
-DWM is simply very suckless and the best!  
+DWM is simply a window manager for programmers by programmers, it is truly a suckless wm and the best!  
 Tha main feature of this window manager is that it is really not a user friendly wm ;)).  
 If you don't know c language, don't waste your time! go and grab another wm that is more user friendly;  
 On the other hand, if you are good in c you'll fall in love with this window manager.  
