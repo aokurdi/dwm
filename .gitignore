@@ -56,6 +56,7 @@ dkms.conf
 config.h
 
 # CTags, compile.json and clang format to be ignored
-ctags
+tags
 compile_commands.json
 .clang-format
+.cache
