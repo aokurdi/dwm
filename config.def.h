@@ -52,7 +52,7 @@ static const Rule rules[] = {
 	/* class                       instance    title      tags mask      switchtotag    isfloating   monitor */
 	{ "Gimp",                      NULL,       NULL,      1 << 4,        1,             1,           -1 },
 	{ "neovide",                   NULL,       NULL,      1 << 2,        1,             0,           -1 },
-	{ "Thunar",                    NULL,       NULL,      1 << 7,        1,             1,           -1 },
+	{ "Thunar",                    NULL,       NULL,      1 << 7,        1,             0,           -1 },
 	{ "Xfce4-terminal",            NULL,       NULL,      0,             0,             1,           -1 },
 	{ "firefox",                   NULL,       NULL,      1 << 1,        1,             0,           -1 },
 	{ "Arcolinux-welcome-app.py",  NULL,       NULL,      0,             0,             1,           -1 },
@@ -130,7 +130,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY|ControlMask,   		XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
 	{ MODKEY,                       XK_space,  cyclelayout,    {.i = +1 } },
