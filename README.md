@@ -7,7 +7,7 @@ Tha main feature of this window manager is that it's _not user friendly wm ;))_.
 If you don't know c language, _don't_ waste your time! go and grab another wm that is more user friendly;  
 On the other hand, if you are good in c you'll fall in love with this window manager.  
 
-This is my modifications on the dwm, it is based of the version of [https://arcolinux.com](Arco Linux), the original dwm 6.2 can be found at [https://dwm.suckless.org](Suckless Org) .  
+This is my modifications on the dwm, it is based of the version of [Arco Linux](https://arcolinux.com), the original dwm 6.2 can be found at [Suckless Org](https://dwm.suckless.org) .  
 
 ### Applied patches:
 * dwm-aplhasystray.  
