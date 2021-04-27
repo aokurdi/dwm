@@ -43,7 +43,7 @@ ___
 
 ![grid](https://github.com/aokurdi/dwm/blob/master/screenshots/bar-with_systray.jpg)
 
-![Without_systray](https://github.com/aokurdi/dwm/blob/master/screenshots/screenshots/bar.jpg)
+![Without_systray](https://github.com/aokurdi/dwm/blob/master/screenshots/bar.jpg)
 
   
 
