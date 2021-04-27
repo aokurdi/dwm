@@ -34,16 +34,16 @@ This is my modifications on the dwm, it is based of the version of [https://arco
 ### Screen Shots:
 #### Tile
 ___
-![tile](/home/janzi/projects/dwm/screenshots/tile.jpg)    
+![tile](https://github.com/aokurdi/dwm/blob/master/screenshots/tile.jpg)    
 
 #### Grid  
-![grid](/home/janzi/projects/dwm/screenshots/grid.jpg)  
+![grid](https://github.com/aokurdi/dwm/blob/master/screenshots/grid.jpg)  
 
 #### Status Bar  
 
-![grid](/home/janzi/projects/dwm/screenshots/bar-with_systray.jpg)
+![grid](https://github.com/aokurdi/dwm/blob/master/screenshots/bar-with_systray.jpg)
 
-![Without_systray](/home/janzi/projects/dwm/screenshots/bar.jpg)
+![Without_systray](https://github.com/aokurdi/dwm/blob/master/screenshots/screenshots/bar.jpg)
 
   
 
