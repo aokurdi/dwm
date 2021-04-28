@@ -21,7 +21,7 @@ This is my modifications on the dwm, it is based of the version of [Arco Linux](
 * dwm-viewontag.  
 * dwm-switchtotag.
 * dwm-alternativetag.  
-** dwm-rotateinplace.  
+* dwm-rotateinplace.  
 
   
 ### My Mods:  
