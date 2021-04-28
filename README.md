@@ -21,6 +21,8 @@ This is my modifications on the dwm, it is based of the version of [Arco Linux](
 * dwm-viewontag.  
 * dwm-switchtotag.
 * dwm-alternativetag.  
+** dwm-rotateinplace.  
+
   
 ### My Mods:  
 * Added gaps around bar "The patch on Suckless site doesn't work", you can adjust the gaps in config.def.h file by changing the value of ypad and xpad.  
