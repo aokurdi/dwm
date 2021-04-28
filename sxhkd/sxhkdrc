@@ -94,7 +94,7 @@ super + v
 #super + m
 #    pragha
 
-#Termite
+#Change this to the terminal of your choice
 super + Return
     kitty
 
