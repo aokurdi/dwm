@@ -23,9 +23,13 @@ This is my modifications on the dwm, it is based of the version of [Arco Linux](
 * dwm-alternativetag.  
 * dwm-rotateinplace.  
 
+### Installation
+    To install run the build script  
+    $./build.sh  
+
 #### NOTE:  
 My default terminal is kitty, if you prefer another terminal, chage line 99 in shxkdrc file.
-  
+
 ### My Mods:  
 * Added gaps around bar "The patch on Suckless site doesn't work", you can adjust the gaps in config.def.h file by changing the value of ypad and xpad.  
 * Added bar height adjustments, can be changed in config.def.h by changing barheight value.  
