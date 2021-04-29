@@ -25,7 +25,7 @@ This is my modifications on the dwm, it is based of the version of [Arco Linux](
 
 ### Installation
     To install run the build script  
-    $./build.sh  
+    % ./build.sh  
 
 #### NOTE:  
 My default terminal is kitty, if you prefer another terminal, chage line 99 in shxkdrc file.
