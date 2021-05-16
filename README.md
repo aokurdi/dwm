@@ -22,22 +22,32 @@ This is my modifications on the dwm, it is based of the version of [Arco Linux](
 * dwm-switchtotag.
 * dwm-alternativetag.  
 * dwm-rotateinplace.  
+* dwm-pango.  
 
 ### Installation
     To install run the build script  
     % ./build.sh  
 
 #### NOTE:  
-My default terminal is kitty, if you prefer another terminal, chage line 99 in shxkdrc file.
+My default terminal is kitty, if you prefer another terminal, chage line 99 in shxkdrc file or if you have st you can launch it with Ctrl + Alt + t.  
+I am using slstatus to display status, you can find my version in my repo; it is stripped down and i removed all bsd code cause i am on linux.  
 
 ### My Mods:  
 * Added gaps around bar "The patch on Suckless site doesn't work", you can adjust the gaps in config.def.h file by changing the value of ypad and xpad.  
 * Added bar height adjustments, can be changed in config.def.h by changing barheight value.  
+* Systray can now be toggled with Super + s.  
+* Active tag has a red underline.  
+* Modifed and added more color scheme.
+* You can choose to install arcolinux logout when running build.sh or if you don't want that you can logout using Super + Shift + q.    
 
 ### TODO:  
-* Enable systray togglling.  
+* ~~Enable systray togglling.~~  
 
   
+### Dependancies  
+* libxft-bgra  (to display emojies and unicode).  
+* a monospace nerdfont.  
+* Take a look at autostart.sh to see what apps you need to install or change them to your preferd apps.  
 
 ### Screen Shots:
 #### Tile
