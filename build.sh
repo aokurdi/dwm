@@ -27,10 +27,19 @@ fi
 
 ##### Creating/copying a dir in .config #####
 if [ ! -d $HOME/.config/arco-dwm ]; then
-    echo -e "[${CYN}MSG${RES}] Creating ${HOME}/.config/arco-dwm and syncing files"
-    mkdir $HOME/.config/arco-dwm
+    echo -e "[${CYN}MSG${RES}] Creating ${HOME}/.config/dwm and syncing files"
+    mkdir $HOME/.config/dwm
 fi
-rsync -rv --exclude '.git' --exclude 'screenshots' --exclude '.cache' --exclude '.gitignore' \
-        --exclude 'compile_commands.json' --exclude 'tags' * $HOME/.config/arco-dwm/
+rsync -rv scripts sxhkd picom.conf autostart.sh ${HOME}/.config/dwm/
+chmod +x ${HOME}/.config/dwm/autostart.sh
+
+echo -en "[${CYN}MSG${RES}]${YEL} Do you want to install arcolinux-logout? (Y/N):${RES} "
+read confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+rsync -rv arcologoutrc ~/.config/
+mv ${HOME}/.config/arcologoutrc ${HOME}/.config/arcologout
+sudo rsync -rv arcolinux-logout /usr/local/bin/
+sudo chmod +x /usr/local/bin/arcolinux-logout
+sudo rsync -rv arcologout /usr/share/
+sudo rsync -rv arcologout-themes /usr/share/
 
 echo -e "${GRN}~>ALL Done. ${RES}"
